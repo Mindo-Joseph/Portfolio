@@ -274,12 +274,13 @@ body
 
 .connect {
   padding-top: 2em;
+  font-size: larger;
 }
 .socials {
   display: flex;
   list-style-type: none;
   justify-content: flex-start;
-  padding-left: 0.5em;
+  padding-left: 0.8em;
 }
 .socials li {
   padding-left: 0.5em;
