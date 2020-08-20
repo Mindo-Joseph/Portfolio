@@ -17,9 +17,11 @@
 
         <a href="" class="logo">Mindo</a>
         <div class="toggle-items">
-            <i class="icon fas fa-bars"></i>
+            <i class="icon fas fa-bars" onclick="openNav()"></i>
         </div>
-        <div class="links">
+        <div class="overlay" id="myNav">
+            <!-- button to close -->
+            <i class="fas fa-times closebtn" onclick="closeNav()"></i>
             <ul class="menu">
                 <li><a href="#work">Portfolio</a></li>
                 <li><a href="#about">About</a></li>
