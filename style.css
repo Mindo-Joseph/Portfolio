@@ -1,5 +1,6 @@
 * {
 	box-sizing: border-box;
+	overflow-x: hidden;
 }
 
 body {
@@ -11,10 +12,15 @@ body {
 	background: whitesmoke;
 	font-family: Poppins,'san-serif';
 }
-
+.intro-section {
+	background-image: url(img/header-background-mobile.svg);
+	border-bottom-left-radius: 40px;
+	width: 100%;
+}
 .header {
 	display: flex;
 	justify-content: space-between;
+	
 }
 
 .header a {
@@ -44,9 +50,8 @@ body {
 	text-decoration: none;
 	padding-right: 1em;
 }
-
-.introduction {
-	background-image: url(img/header-background-mobile.svg);
+.fab {
+	font-size: 25px;
 }
 
 .show {
@@ -79,8 +84,8 @@ body {
 	position: absolute;
 	width: 95.58px;
 	height: 22.02px;
-	left: 294px;
-	top: 165.79px;
+	left: 234px;
+	top: 115.79px;
 	background: #ebebff;
 	transform: rotate(-30deg);
 }
@@ -89,8 +94,8 @@ body {
 	position: absolute;
 	width: 65px;
 	height: 65px;
-	left: 323px;
-	top: 152.24px;
+	left: 263px;
+	top: 122.24px;
 	border-radius: 50%;
 	background: #6070ff;
 }
@@ -111,7 +116,7 @@ body {
 	width: 11px;
 	height: 11px;
 	left: 298px;
-	top: 315px;
+	top: 275px;
 	background: #fff;
 	border: 1px solid #cbcdff;
 	box-sizing: border-box;
@@ -142,7 +147,7 @@ body {
 	position: absolute;
 	width: 24.14px;
 	height: 12.07px;
-	left: 341.76px;
+	left: 301.76px;
 	top: 360.69px;
 	background: #6070ff;
 	transform: rotate(-166.08deg);
@@ -152,8 +157,8 @@ body {
 	position: absolute;
 	width: 30.1px;
 	height: 30.1px;
-	left: 332.18px;
-	top: 340.44px;
+	left: 292.18px;
+	top: 240.44px;
 	background: #ebebff;
 	transform: rotate(69.41deg);
 }
@@ -200,12 +205,12 @@ body {
 }
 
 .header-text {
-	margin-top: 4em;
+	margin-top: 2em;
 }
 
 .header-text h2 {
 	position: static;
-	width: 327px;
+	width: 100%;
 	height: auto;
 	left: 24px;
 	top: -184px;
@@ -220,7 +225,7 @@ body {
 	flex: none;
 	order: 0;
 	align-self: center;
-	margin: 0px 12px;
+	margin: 3em 0 12px 12px;
 }
 
 .header-text p {
@@ -358,6 +363,7 @@ body {
 	list-style-type: none;
 	justify-content: flex-start;
 	padding-left: 0.5em;
+	padding-bottom: 4em;
 }
 
 .socials li {
