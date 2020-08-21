@@ -1,8 +1,10 @@
-function classToggle() {
-    const navs = document.querySelectorAll('.menu')
-    
-    navs.forEach(nav => nav.classList.toggle('show'));
-  }
-  
-  document.querySelector('.toggle-items')
-    .addEventListener('click', classToggle);
+// Open when someoe clicks the 3 bars
+function openNav() {
+  document.getElementById("myNav").style.width = "100%";
+
+}
+// Close when someone clicks on the X symbol
+
+function closeNav() {
+  document.getElementById("myNav").style.width = "0%"
+}
