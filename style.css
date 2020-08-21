@@ -295,11 +295,8 @@ body {
 	display: flex;
 	flex-direction: column;
 	padding: 16px;
-	position: static;
 	width: 327px;
 	height: 552px;
-	left: calc(50% - 327px/2);
-	top: 1438px;
 	background: #fff;
 	border: 1px solid #dfe1e6;
 	box-sizing: border-box;
@@ -307,7 +304,7 @@ body {
 	flex: none;
 	order: 1;
 	align-self: center;
-	margin: 8em 1em;
+	margin: 8em 4em;
 }
 
 .project_image {
