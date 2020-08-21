@@ -27,6 +27,9 @@ body
   flex-direction: column;
   justify-content: space-around;
 }
+.introduction {
+  background-image: url(img/header-background-mobile.svg);
+}
 .show {
   display: flex;
 }
