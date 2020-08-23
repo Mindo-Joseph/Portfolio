@@ -246,6 +246,7 @@ body {
 
 .header-text {
   margin-top: 2em;
+  margin-bottom: 3em;
 }
 
 .header-text h2 {
@@ -462,9 +463,13 @@ body {
 .about-me {
   padding-top: 3em;
 }
+.header-text .socials {
+	padding-bottom: 1em;
+}
 
 #get-resume {
   margin-left: 1em;
+  width: auto;
 }
 
 .tech-stack {
