@@ -8,10 +8,13 @@
     />
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="micromodal.css">
+    <link rel="stylesheet" href="https://unpkg.com/micromodal/dist/micromodal.min.js">
     <script
       src="https://kit.fontawesome.com/bbab150638.js"
       crossorigin="anonymous"
     ></script>
+   
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Joseph Mindo</title>
   </head>
@@ -125,7 +128,7 @@
             <li><p>IMDB API</p></li>
             <li><p>Telegram API</p></li>
           </ul>
-          <button class="see-project">
+          <button class="see-project" data-micromodal-trigger="modal-1">
             See Project
           </button>
         </div>
@@ -230,6 +233,28 @@
         </form>
       </article>
     </section>
+    <div class="modal micromodal-slide" id="modal-1" aria-hidden="true">
+      <div class="modal__overlay" tabindex="-1" data-micromodal-close>
+        <div class="modal__container" role="dialog" aria-modal="true" aria-labelledby="modal-1-title">
+          <header class="modal__header">
+            <h2 class="modal__title" id="modal-1-title">
+              Micromodal
+            </h2>
+            <button class="modal__close" aria-label="Close modal" data-micromodal-close></button>
+          </header>
+          <main class="modal__content" id="modal-1-content">
+            <p>
+              Try hitting the <code>tab</code> key and notice how the focus stays within the modal itself. Also, <code>esc</code> to close modal.
+            </p>
+          </main>
+          <footer class="modal__footer">
+            <button class="modal__btn modal__btn-primary">Continue</button>
+            <button class="modal__btn" data-micromodal-close aria-label="Close this dialog window">Close</button>
+          </footer>
+        </div>
+      </div>
+    </div>
   </body>
+ <script src="index.js"></script> 
 </html>
-<script src="index.js"></script>
+
