@@ -551,6 +551,64 @@ body {
   display: flex;
   justify-content: center;
 }
+.tabs {
+  border-radius: 8px;
+  overflow: hidden;
+  box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
+}
+.tab {
+  width: 100%;
+  color: white;
+  overflow: hidden;
+}
+.tab-label {
+  display: flex;
+  justify-content: space-between;
+  padding: 1em;
+  background: #456 32;
+  font-weight: bold;
+  cursor: pointer;
+ /* Icon */
+}
+.tab-label:hover {
+  background: #456 32;
+}
+.tab-label::after {
+  content: "\276F";
+  width: 1em;
+  height: 1em;
+  text-align: center;
+  transition: all 0.35s;
+}
+.tab-content {
+  max-height: 0;
+  padding: 0 1em;
+  color: #456 32;
+  background: white;
+  transition: all 0.35s;
+}
+.tab-close {
+  display: flex;
+  justify-content: flex-end;
+  padding: 1em;
+  font-size: 0.75em;
+  background: #456 32;
+  cursor: pointer;
+}
+.tab-close:hover {
+  background: #456 32;
+}
+input:checked + .tab-label {
+  background: #456 32;
+}
+input:checked + .tab-label::after {
+  transform: rotate(90deg);
+}
+input:checked ~ .tab-content {
+  max-height: 100vh;
+  padding: 1em;
+}
+
 
 .contact-me p {
   text-align: center;
@@ -643,5 +701,76 @@ fieldset {
 @media only screen and (min-width: 768px) {
   .header i {
     display: none;
+  }
+  .introduction {
+    display: flex;
+    justify-items: center;
+    align-items: center;
+  }
+  .header-text  {
+    padding-left: 30%;
+  }
+  #ellipse-3 {
+    left: 693px;
+
+  }
+  #rectangle-4 {
+    left: 664px;
+  }
+  #ellipse-13 {
+    left: 92px;
+  }
+  #ellipse-14 {
+    left: 198px;
+  }
+  #rectangle-5 {
+    left: 91px;
+
+  }
+  #ellipse-4 {
+    left: 637px;
+    top: 237px;
+  }
+  #ellipse-12 {
+    left: 101.76px;
+  }
+  .project-1 {
+    display: flex;
+    flex-direction: row;
+    height: 352px;
+  }
+  .project_description {
+    margin-top: 1em;
+  }
+  .project_image {
+    height: 320px;
+  }
+  .about-me h1 {
+    width: 100%;
+    padding-left: 23%;
+  }
+  .about .header-text {
+    padding-left: 20%;
+  }
+}
+@media only screen and (min-width: 1024px) {
+  #ellipse-3 {
+    left: 893px;
+  }
+  .header-text p {
+    width: 80%;
+  }
+  #rectangle-4 {
+    left: 864px;
+  }
+  #ellipse-4 {
+    left: 837px;
+  }
+  .project-1 {
+    display: flex;
+    justify-content: space-evenly;
+  }
+  .about-me h1 {
+    padding-left: 21%;
   }
 }
