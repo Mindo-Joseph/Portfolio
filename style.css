@@ -6,6 +6,8 @@
 body {
   overflow-x: hidden;
   background: whitesmoke;
+  overflow-y: scroll !important;
+
 
 }
 
@@ -698,45 +700,38 @@ fieldset {
   color: #888;
 }
 	
-.modal {
+.modal-container {
+  background-color: rgba(0,0,0,0.3);
   position: fixed;
-  left: 0;
   top: 0;
-  width: 100%;
+  left: 0;
   height: 100%;
-  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
   opacity: 0;
-  visibility: hidden;
-  transform: scale(1.1);
-  transition: visibility 0s linear 0.25s, opacity 0.25s 0s, transform 0.25s;
+  pointer-events: none;
+  transition: opacity 0.3s ease;
+  overflow:-x hidden;
+  
 }
-.modal-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-  background-color: white;
-  padding: 1rem 1.5rem;
-  width: 24rem;
-  border-radius: 0.5rem;
-}
-.close-button {
-  float: right;
-  width: 1.5rem;
-  line-height: 1.5rem;
-  text-align: center;
-  cursor: pointer;
-  border-radius: 0.25rem;
-  background-color: lightgray;
-}
-.close-button:hover {
-  background-color: darkgray;
-}
-.show-modal {
+
+.modal-container.show {
+  pointer-events: auto;
   opacity: 1;
-  visibility: visible;
-  transform: scale(1.0);
-  transition: visibility 0s linear 0s, opacity 0.25s 0s, transform 0.25s;
+  overflow:hidden;
+  position: fixed;
+}
+
+.fa-times {
+  
+  font-size: 30px;
+
+}
+.name-and-close {
+  display: flex;
+}
+.project-1.popup {
+  margin: 1em 0.5em;
+  height: 600px;
 }
 /* Project Description */
 @media only screen and (min-width: 768px) {
