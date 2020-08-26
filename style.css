@@ -732,6 +732,23 @@ fieldset {
 .project-1.popup {
   margin: 1em 0.5em;
   height: 600px;
+  box-shadow: 1px 1px 1px 1px whitesmoke;
+}
+.buttons-code {
+  display: flex;
+  justify-content: space-between;
+}
+
+.see-project.code {
+  position: relative;
+  width: 120px;
+}
+
+.fa-external-link-alt {
+  margin-top: 3px;
+}
+.see-project.code span {
+  margin-right: 15px;
 }
 /* Project Description */
 @media only screen and (min-width: 768px) {
