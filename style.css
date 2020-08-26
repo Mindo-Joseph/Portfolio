@@ -805,6 +805,34 @@ fieldset {
   .about .header-text {
     padding-left: 20%;
   }
+  .modal-container.show {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  .modal {
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+  }
+  .project_description div h2 {
+    width: 500px;
+  }
+  .project_image {
+    width: 550px;
+  }
+  .blurb {
+    width: 550px;
+
+  }
+  .project-1.popup {
+    height: 700px;
+  }
+  .name-and-close {
+    display: flex;
+    justify-content: space-between;
+  }
 }
 @media only screen and (min-width: 1024px) {
   #ellipse-3 {

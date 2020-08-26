@@ -12,6 +12,8 @@ open.addEventListener('click',() => {
 });
 close.addEventListener('click',() => {
   model_container.classList.remove('show');
+  var x = document.getElementsByTagName("BODY")[0];
+  x.style.position= 'static';
 });
 // Open when someoe clicks the 3 bars
 function openNav() {
