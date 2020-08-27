@@ -6,6 +6,7 @@
       href="https://fonts.googleapis.com/css2?family=Poppins&display=swap"
       rel="stylesheet"
     />
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="micromodal.css">
@@ -109,7 +110,7 @@
               
               <article class="project-1 popup">
                 
-                <div class="project_description">
+                <div class="project_description desc-detail">
                   <div>
                     <div class="name-and-close">
                       <h2>MovieTell </h2>
@@ -122,8 +123,8 @@
                       <li class="text"><p>2020</p></li>
                     </ul>
                   </div>
-                  <div class="project_image"></div>
-                  <p class="blurb">
+                  <div class="project_image image-detail"></div>
+                  <p class="blurb blurb-detail">
                     A Telegram bot to help you discover the top 3 highly rated movies
                     based on genre from all over the web while providing a trailer on
                     YouTube. Saving you alot of time from looking up the latest trending movies and not knowing what to watch
@@ -208,22 +209,43 @@
         </button>
       </article>
       <article class="tech-stack">
-        <div class="tabs">
-          <div class="tab">
-            <input type="checkbox" id="chck1">
-            <label class="tab-label" for="chck1">Item 1</label>
-            <div class="tab-content">
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ipsum, reiciendis!
+       <div class="accordion">
+         <div class="accordion-item" id="language">
+           <a href="#language">
+             Languages 
+             <i class="fas fa-chevron-right"></i>
+             <i class="fas fa-chevron-down"></i>
+           </a>
+           <div class="stack-items">
+             <div class="single-item">
+              <i class="devicon-ruby-plain-wordmark colored"></i>
+              <i class="devicon-html5-plain-wordmark"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-python-plain-wordmark"></i>
             </div>
-          </div>
-          <div class="tab">
-            <input type="checkbox" id="chck2">
-            <label class="tab-label" for="chck2">Item 2</label>
-            <div class="tab-content">
-              Lorem ipsum dolor sit amet consectetur adipisicing elit. A, in!
+           </div>
+         </div>
+
+         <div class="accordion-item" id="framework">
+          <a href="#framework">
+            Frameworks 
+            <i class="fas fa-chevron-right"></i>
+            <i class="fas fa-chevron-down"></i>
+          </a>
+          <div class="stack-items">
+            <div class="single-item">
+              <i class="devicon-rails-plain-wordmark colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-redux- colored"></i>
+              <i class="devicon-react-original-wordmark colored"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored"></i>
             </div>
           </div>
         </div>
+
+        
+       </div>
     
 
         
@@ -232,10 +254,12 @@
         
       </article>
     </section>
-    <section class="contact">
-      <article class="contact-me">
-        <h2>Contact Me</h2>
+    <footer class="contact">
+        <div class="footer-text">
+          <h2>Contact Me</h2>
         <p>Do you have an app idea that needs to implemented? Contact me here</p>
+        </div>
+        
        
         <form action="" id="contact">
           <fieldset>
@@ -273,8 +297,7 @@
             </button>
           </fieldset>
         </form>
-      </article>
-    </section>
+    </footer>
    
   </body>
   
