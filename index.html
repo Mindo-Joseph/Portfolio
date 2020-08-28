@@ -10,7 +10,22 @@
     <link rel="stylesheet" href="style.css" />
     <link rel="stylesheet" href="reset.css" />
     <link rel="stylesheet" href="micromodal.css">
-
+    <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+    <script type="text/javascript">
+      (function(){
+          emailjs.init("user_ctBsyl9YHVMyJ6TQL4sM4");
+      })();
+    </script>
+    <script type="text/javascript">
+      window.onload = function() {
+          document.getElementById('contact').addEventListener('submit', function(event) {
+              event.preventDefault();
+              // generate the contact number value
+              this.contact_number.value = Math.random() * 100000 | 0;
+              emailjs.sendForm('gmail', 'template_YXzmdcYi', this);
+          });
+      }
+  </script>
     <script
       src="https://kit.fontawesome.com/bbab150638.js"
       crossorigin="anonymous"
@@ -26,7 +41,9 @@
         <a href="" class="logo">Mindo</a>
         <div class="toggle-items">
           <i class="icon fas fa-bars" onclick="openNav()"></i>
+          
         </div>
+
         <div class="overlay" id="myNav">
           <!-- button to close -->
           <i class="fas fa-times closebtn" onclick="closeNav()"></i>
@@ -308,8 +325,9 @@
         </div>
         
        
-        <form action="" id="contact">
+        <form id="contact">
           <fieldset>
+            <input type="hidden" name="contact_number">
             <input
               placeholder="Your name"
               type="text"
@@ -322,6 +340,7 @@
             <input
               placeholder="Your Email Address"
               type="email"
+              name="user_email"
               tabindex="2"
               required
             />
@@ -330,18 +349,19 @@
             <textarea
               placeholder="Type your message here...."
               tabindex="5"
+              name="message"
               required
             ></textarea>
           </fieldset>
           <fieldset>
-            <button
+            <input
               name="submit"
               type="submit"
               id="contact-submit"
               data-submit="...Sending"
+              value="Send"
             >
-              Submit
-            </button>
+             
           </fieldset>
         </form>
     </footer>

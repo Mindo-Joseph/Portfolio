@@ -10,7 +10,7 @@ const liveviewp1 = document.getElementById('artspeak-live')
 const sourcecodep1 = document.getElementById('artspeak-code')
 const liveviewp2 = document.getElementById('movietell-live')
 const sourcecodep2 = document.getElementById('movietell-code')
-
+const contactform = document.getElementById('contact')
 open.addEventListener('click',() => {
   
   model_container.classList.add('show');
@@ -64,4 +64,15 @@ function openNav() {
 function closeNav() {
   document.getElementById("myNav").style.width = "0%"
 }
+
+function showLinks(x) {
+  if (x.matches) {
+    document.getElementById("myNav").style.display = "block";
+  }
+}
+
+var x = window.matchMedia("(min-width: 768px)")
+showLinks(x);
+x.addListener(showLinks);
+
 

@@ -785,10 +785,18 @@ fieldset {
 .see-project.code span {
   margin-right: 15px;
 }
+.big {
+  display: none;
+}
 /* Project Description */
 @media only screen and (min-width: 768px) {
   .header i {
     display: none;
+  }
+  
+  .menu {
+    display: flex;
+    flex-direction: row;
   }
   .single-item i {
     font-size: 70px;
