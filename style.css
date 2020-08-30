@@ -1,6 +1,6 @@
 * {
   box-sizing: border-box;
-  
+
 }
 
 body {
@@ -10,6 +10,7 @@ body {
 
 
 }
+
 .project_image img {
   max-width: 100%;
   max-height: 100%;
@@ -403,6 +404,7 @@ body {
   background: #ebebff;
   font-size: 12px;
 }
+
 .languages li p {
   text-align: center;
   padding-top: 4px;
@@ -441,10 +443,12 @@ body {
   color: #7f8cff;
   box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
 }
+
 .see-project:hover {
-	background: #6070FF;
+  background: #6070FF;
 
 }
+
 .text {
   font-family: "Poppins";
   font-style: normal;
@@ -454,11 +458,13 @@ body {
   flex: none;
   align-self: center;
   padding-right: 14px;
-  
+
 }
+
 .text p {
-	text-align: center;
+  text-align: center;
 }
+
 .project-1 {
   box-shadow: 3px 3px 3px 3px whitesmoke;
 }
@@ -471,24 +477,25 @@ body {
 .about-me {
   padding-top: 3em;
 }
+
 .header-text .socials {
-	padding-bottom: 1em;
+  padding-bottom: 1em;
 }
 
 #get-resume {
-	display: flex;
-	position: relative;
-	padding: 12px;
-	width: auto;
-	height: 44px;
-	background: #fff;
-	border: 1px solid #7f8cff;
-	border-radius: 8px;
-	font-family: "Poppins", "san-serif";
-	color: #7f8cff;
-	box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
-	margin-bottom: 1.6em;
-	margin-left: 1em;
+  display: flex;
+  position: relative;
+  padding: 12px;
+  width: auto;
+  height: 44px;
+  background: #fff;
+  border: 1px solid #7f8cff;
+  border-radius: 8px;
+  font-family: "Poppins", "san-serif";
+  color: #7f8cff;
+  box-shadow: 0px 8px 16px rgba(64, 83, 252, 0.24);
+  margin-bottom: 1.6em;
+  margin-left: 1em;
 }
 
 .tech-stack {
@@ -513,32 +520,36 @@ body {
   align-self: center;
   padding-left: 0.5em;
 }
+
 .panel {
-	padding: 0 18px;
-	background-color: white;
-	display: none;
-	overflow: hidden;
+  padding: 0 18px;
+  background-color: white;
+  display: none;
+  overflow: hidden;
 }
+
 .panel ul {
-	display: flex;
-	flex-direction: column;
+  display: flex;
+  flex-direction: column;
   list-style-type: none;
-  font-family: 'Poppins','sans-serif';
-	
+  font-family: 'Poppins', 'sans-serif';
+
 }
+
 .accordion-item {
   background-color: #fff;
   border-radius: 8px;
-  box-shadow: .5em 2px .5em rgba(0, 0, 0,0.1);
+  box-shadow: .5em 2px .5em rgba(0, 0, 0, 0.1);
   padding: 1rem;
   margin-bottom: 1em;
 }
+
 .accordion-item a {
   font-size: 1.2em;
   text-decoration: none;
   color: #000;
   width: 100%;
-  font-family: 'Poppins',sans-serif;
+  font-family: 'Poppins', sans-serif;
   align-items: center;
   display: flex;
   justify-content: space-around;
@@ -547,16 +558,19 @@ body {
 i.fas.fa-chevron-down {
   display: none;
 }
+
 .single-item {
-  font-family: 'Poppins','sans-serif';
+  font-family: 'Poppins', 'sans-serif';
   display: flex;
   justify-content: space-evenly;
   text-align: center;
 }
+
 .single-item i {
   font-size: 40px;
   margin-top: 0.3em;
 }
+
 .contact {
   margin-top: 3em;
   background: #6070FF;
@@ -569,7 +583,7 @@ i.fas.fa-chevron-down {
   padding-right: 1em;
 }
 
-form > * {
+form>* {
   margin-left: 1em;
 
 }
@@ -582,16 +596,19 @@ form > * {
   padding-top: 2em;
   text-align: center;
 }
+
 .tabs {
   border-radius: 8px;
   overflow: hidden;
   box-shadow: 0 4px 4px -2px rgba(0, 0, 0, 0.5);
 }
+
 .tab {
   width: 100%;
   color: white;
   overflow: hidden;
 }
+
 .tab-label {
   display: flex;
   justify-content: space-between;
@@ -599,11 +616,13 @@ form > * {
   background: #456 32;
   font-weight: bold;
   cursor: pointer;
- /* Icon */
+  /* Icon */
 }
+
 .tab-label:hover {
   background: #456 32;
 }
+
 .tab-label::after {
   content: "\276F";
   width: 1em;
@@ -611,6 +630,7 @@ form > * {
   text-align: center;
   transition: all 0.35s;
 }
+
 .tab-content {
   max-height: 0;
   padding: 0 1em;
@@ -618,6 +638,7 @@ form > * {
   background: white;
   transition: all 0.35s;
 }
+
 .tab-close {
   display: flex;
   justify-content: flex-end;
@@ -626,16 +647,20 @@ form > * {
   background: #456 32;
   cursor: pointer;
 }
+
 .tab-close:hover {
   background: #456 32;
 }
-input:checked + .tab-label {
+
+input:checked+.tab-label {
   background: #456 32;
 }
-input:checked + .tab-label::after {
+
+input:checked+.tab-label::after {
   transform: rotate(90deg);
 }
-input:checked ~ .tab-content {
+
+input:checked~.tab-content {
   max-height: 100vh;
   padding: 1em;
 }
@@ -731,9 +756,9 @@ fieldset {
 :-ms-input-placeholder {
   color: #888;
 }
-	
+
 .modal-container {
-  background-color: rgba(0,0,0,0.3);
+  background-color: rgba(0, 0, 0, 0.3);
   position: fixed;
   top: 0;
   left: 0;
@@ -742,14 +767,14 @@ fieldset {
   opacity: 0;
   pointer-events: none;
   transition: opacity 0.3s ease;
-  overflow:-x hidden;
-  
+  overflow: -x hidden;
+
 }
 
 .modal-container.show {
   pointer-events: auto;
   opacity: 1;
-  overflow:hidden;
+  overflow: hidden;
   position: fixed;
   display: flex;
   justify-content: center;
@@ -757,18 +782,21 @@ fieldset {
 }
 
 .fa-times {
-  
+
   font-size: 30px;
 
 }
+
 .name-and-close {
   display: flex;
 }
+
 .project-1.popup {
   margin: 1em 0.5em;
   height: 600px;
   box-shadow: 1px 1px 1px 1px whitesmoke;
 }
+
 .buttons-code {
   display: flex;
   justify-content: space-between;
@@ -782,63 +810,91 @@ fieldset {
 .fa-external-link-alt {
   margin-top: 3px;
 }
+
 .see-project.code span {
   margin-right: 15px;
 }
+
 .big {
   display: none;
 }
+
+.menu-links {
+  display: none;
+}
+
 /* Project Description */
 @media only screen and (min-width: 768px) {
-  .header i {
+  .toggle-items {
     display: none;
   }
-  
-  .menu {
-    display: flex;
-    flex-direction: row;
+
+  .overlay {
+    display: none;
   }
+
+  .menu-links {
+    display: flex;
+
+  }
+
+  .menu-links a {
+    text-decoration: none;
+    font-family: 'Poppins', sans-serif;
+  }
+
   .single-item i {
     font-size: 70px;
   }
+
   .introduction {
     display: flex;
     justify-items: center;
     align-items: center;
   }
-  .header-text  {
+
+  .header-text {
     padding-left: 30%;
   }
+
   #ellipse-3 {
     left: 693px;
 
   }
+
   .contact {
     display: flex;
     justify-content: space-between;
     width: 100%;
     padding: 0 8em;
   }
+
   #rectangle-4 {
     left: 664px;
   }
+
   #ellipse-13 {
     left: 92px;
   }
+
   #ellipse-14 {
     left: 198px;
   }
+
   #rectangle-5 {
     left: 91px;
 
   }
+
   #ellipse-4 {
     left: 637px;
     top: 237px;
   }
+
   #ellipse-12 {
     left: 101.76px;
   }
+
   .project-1 {
     display: flex;
     flex-direction: row;
@@ -846,102 +902,128 @@ fieldset {
     margin-left: 3em;
     margin-right: 3em;
   }
+
   .project_description {
     margin-top: 1em;
   }
+
   .project_image {
     height: 320px;
   }
+
   .about-me h1 {
     width: 100%;
     padding-left: 23%;
   }
+
   .about .header-text {
     padding-left: 20%;
   }
+
   .modal-container.show {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .modal {
     display: flex;
     justify-content: center;
     align-items: flex-end;
 
   }
+
   .buttons-code {
     display: flex;
     justify-content: center;
     align-items: center;
   }
+
   .see-project.code {
     margin-right: 1.6em;
   }
+
   .project_description.desc-detail div h2 {
     width: 500px;
   }
-  .project_image.image-detail{
+
+  .project_image.image-detail {
     width: 550px;
   }
+
   .blurb.blurb-detail {
     width: 550px;
 
   }
+
   .project-1.popup {
     height: 700px;
   }
+
   .name-and-close {
     display: flex;
     justify-content: space-between;
   }
 }
+
 @media only screen and (min-width: 1024px) {
   #ellipse-3 {
-    left:90%;
+    left: 90%;
   }
+
   #rectangle-4 {
     left: 90%;
   }
+
   .contact {
     display: flex;
     flex-direction: row;
     padding: 0 2em;
   }
+
   .contact p {
     text-align: left;
     width: 80%;
   }
+
   #contact {
     width: 70%;
     margin-top: 1em;
   }
+
   .header-text p {
     width: 80%;
   }
+
   #rectangle-4 {
     left: 864px;
   }
+
   #ellipse-4 {
     left: 837px;
   }
+
   .project-1 {
     display: flex;
     justify-content: space-evenly;
   }
+
   .about-me h1 {
     padding-left: 21%;
   }
+
   .project_description.desc-detail div h2 {
     min-width: 700px;
     max-width: 80%;
   }
-  .project_image.image-detail{
+
+  .project_image.image-detail {
     min-width: 750px;
   }
+
   .blurb.blurb-detail {
     min-width: 750px;
 
   }
- 
+
 }
