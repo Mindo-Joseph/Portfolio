@@ -1,64 +1,399 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@100&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-    <script src="https://kit.fontawesome.com/bbab150638.js" crossorigin="anonymous"></script>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Joseph Mindo</title>
+  <meta charset="UTF-8" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/konpa/devicon@master/devicon.min.css">
+  <link rel="stylesheet" href="style.css" />
+  <link rel="stylesheet" href="reset.css" />
+  <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/emailjs-com@2.3.2/dist/email.min.js"></script>
+  <script type="text/javascript">
+    (function () {
+      emailjs.init("user_ctBsyl9YHVMyJ6TQL4sM4");
+    })();
+  </script>
+  <script type="text/javascript">
+    window.onload = function () {
+      document.getElementById('contact').addEventListener('submit', function (event) {
+        event.preventDefault();
+        // generate the contact number value
+        this.contact_number.value = Math.random() * 100000 | 0;
+        emailjs.sendForm('gmail', 'template_YXzmdcYi', this);
+      });
+    }
+  </script>
+  <script src="https://kit.fontawesome.com/bbab150638.js" crossorigin="anonymous"></script>
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Joseph Mindo</title>
 </head>
+
 <body>
+  <div class="intro-section">
     <header class="header">
-       
-        <a href="" class="logo">Mindo</a>
-        <div class="toggle-items">
-            <i class="icon fas fa-bars"></i>
-        </div>
-        <div class="links">
-            <ul class="menu">
-                <li><a href="#work">Portfolio</a></li>
-                <li><a href="#about">About</a></li>
-                <li><a href="#contact">Contact</a></li>
-            </ul>
-        </div>
-        
+      <a href="" class="logo">Mindo</a>
+
+      <div class="toggle-items">
+        <i class="icon fas fa-bars" onclick="openNav()"></i>
+
+      </div>
+
+      <div class="overlay" id="myNav">
+        <!-- button to close -->
+        <i class="fas fa-times closebtn" onclick="closeNav()"></i>
+        <ul class="menu">
+          <li><a href="#work">Portfolio</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </div>
+      <div class="menu-links">
+        <a href="#work">Portfolio</a>
+        <a href="#about">About</a>
+        <a href="#contact">Contact</a>
+
+
+      </div>
     </header>
-</body>
+
     <section class="introduction">
-        <div id="rectangle-4"></div>
-        <div id="ellipse-3"></div>
-        <div id="ellipse-15"></div>
-        <div id="ellipse-14"></div>
-        <div id="ellipse-8"></div>
-        <div id="ellipse-11"></div>
-        <div id="rectangle-6"></div>
-        <div id="ellipse-12"></div>
-        <div id="ellipse-13"></div>
-        <div id="ellipse-4"></div>
-        <div id="rectangle-5"></div>
-        <div id="ellipse-5"></div>
-        <div id="rectangle-7"></div>
+      <div id="rectangle-4"></div>
+      <div id="ellipse-3"></div>
+      <div id="ellipse-15"></div>
+      <div id="ellipse-14"></div>
+      <div id="ellipse-8"></div>
+      <div id="ellipse-11"></div>
+      <div id="rectangle-6"></div>
+      <div id="ellipse-12"></div>
+      <div id="ellipse-13"></div>
+      <div id="ellipse-4"></div>
+      <div id="rectangle-5"></div>
+      <div id="ellipse-5"></div>
+      <div id="rectangle-7"></div>
 
-        <article class="header-text">
-            <h2>
-                I'm Joseph <br>
-                Glad to see you
-            </h2>
-            <p>
-                Lorem ipsum some text goes here other text goes here
-                More text about me yaddi yadda and all that stuff
-            </p>
-            <p class="connect">LET'S CONNECT
-            <ul class="socials">
-                <li><a href="#github"><i class="fab fa-github"></i></a></li>
-                <li><a href="#linkedin"><i class="fab fa-linkedin-in"></i></a></li>
-                <li><a href="#medium"><i class="fab fa-medium"></i></a></li>
-                <li><a href="#twitter"><i class="fab fa-twitter"></i></a></li>
-            </ul>
-            </p>
-
-        </article>
+      <article class="header-text">
+        <h2>
+          I'm Joseph <br />
+          Glad to see you
+        </h2>
+        <p>
+          An experienced and positive fullstack developer who enjoys working with high performing teams and contributing
+          to open source.
+        </p>
+        <p class="connect">LET'S CONNECT</p>
+        <ul class="socials">
+          <li>
+            <a href="https://github.com/Mindo-Joseph"><i class="fab fa-github"></i></a>
+          </li>
+          <li>
+            <a href="https://www.linkedin.com/in/josephmindo/"><i class="fab fa-linkedin-in"></i></a>
+          </li>
+          <li>
+            <a href="https://medium.com/@ndirangumindo"><i class="fab fa-medium"></i></a>
+          </li>
+          <li>
+            <a href="https://twitter.com/mindoJoseph"><i class="fab fa-twitter"></i></a>
+          </li>
+        </ul>
+      </article>
     </section>
-</html>
+  </div>
+  <section class="project-overview" id="work">
+    <article class="project-1">
+      <div class="project_image">
+        <img src="img/artspeakborder.png" alt="">
+      </div>
+      <div class="project_description">
+        <div>
+          <h2>ArtSpeak</h2>
+          <ul class="metadata">
+            <li class="company">
+              <p>Microverse</p>
+            </li>
+            <li class="text">
+              <p>Full-Stack Dev</p>
+            </li>
+            <li class="text">2020</li>
+          </ul>
+        </div>
+
+        <p class="blurb">
+          A social networking site for art enthusiasts to come together and
+          share ideas as well as find inspiration
+        </p>
+        <ul class="languages">
+          <li>
+            <p>html</p>
+          </li>
+          <li>
+            <p>scss</p>
+          </li>
+          <li>
+            <p>Ruby on Rails</p>
+          </li>
+        </ul>
+        <button class="see-project" id="open-project">
+          See Project
+        </button>
+        <div class="modal-container" id="modal-container">
+          <div class="modal">
+
+            <article class="project-1 popup">
+
+              <div class="project_description desc-detail">
+                <div>
+                  <div class="name-and-close">
+                    <h2>ArtSpeak</h2>
+                    <i class="fas fa-times" id="closeproject"></i>
+                  </div>
+
+                  <ul class="metadata">
+                    <li class="company">
+                      <p>Microverse</p>
+                    </li>
+                    <li class="text">
+                      <p>Full-Stack Dev</p>
+                    </li>
+                    <li class="text">
+                      <p>2020</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project_image image-detail">
+                  <img src="img/artspeakborder.png" alt="">
+                </div>
+                <p class="blurb blurb-detail">
+                  A social networking site for art enthusiasts to share opinions and seek inspiration as well as market
+                  their products.
+                </p>
+                <ul class="languages">
+                  <li>
+                    <p>html</p>
+                  </li>
+                  <li>
+                    <p>scss</p>
+                  </li>
+                  <li>
+                    <p>Ruby on Rails</p>
+                  </li>
+                </ul>
+                <div class="buttons-code">
+                  <button class="see-project code" id="artspeak-live">
+                    <span>View Live</span><i class="fas fa-external-link-alt"></i>
+                  </button>
+                  <button class="see-project code" id="artspeak-code">
+                    <span>Source</span><i class="fab fa-github"></i>
+                  </button>
+                </div>
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </article>
+    <article class="project-1">
+      <div class="project_image">
+        <img src="img/movietell.png" alt="">
+      </div>
+      <div class="project_description">
+        <div>
+          <h2>MovieTell</h2>
+          <ul class="metadata">
+            <li class="company">
+              <p>Microverse</p>
+            </li>
+            <li class="text">
+              <p>Full-Stack Dev</p>
+            </li>
+            <li class="text">
+              <p>2020</p>
+            </li>
+          </ul>
+        </div>
+
+        <p class="blurb">
+          A Telegram bot to help you discover the top 3 highly rated movies
+          based on genre from all over the web while providing a trailer on
+          YouTube
+        </p>
+        <ul class="languages">
+          <li>
+            <p>Ruby</p>
+          </li>
+          <li>
+            <p>IMDB API</p>
+          </li>
+          <li>
+            <p>Telegram API</p>
+          </li>
+        </ul>
+        <button class="see-project" id="open-project2">
+          See Project
+        </button>
+        <div class="modal-container" id="modal-container2">
+          <div class="modal">
+
+            <article class="project-1 popup">
+
+              <div class="project_description desc-detail">
+                <div>
+                  <div class="name-and-close">
+                    <h2>MovieTell</h2>
+                    <i class="fas fa-times" id="closeproject2"></i>
+                  </div>
+
+                  <ul class="metadata">
+                    <li class="company">
+                      <p>Microverse</p>
+                    </li>
+                    <li class="text">
+                      <p>Full-Stack Dev</p>
+                    </li>
+                    <li class="text">
+                      <p>2020</p>
+                    </li>
+                  </ul>
+                </div>
+                <div class="project_image image-detail">
+                  <img src="img/movietell.png" alt="">
+                </div>
+                <p class="blurb blurb-detail">
+                  A Telegram bot to help you discover the top 3 highly rated movies
+                  based on genre from all over the web while providing a trailer on
+                  YouTube
+                </p>
+                <ul class="languages">
+                  <li>
+                    <p>Ruby</p>
+                  </li>
+                  <li>
+                    <p>IMDB API</p>
+                  </li>
+                  <li>
+                    <p>Telegram API</p>
+                  </li>
+                </ul>
+                <div class="buttons-code">
+                  <button class="see-project code" id="movietell-live">
+                    <span>View Live</span><i class="fas fa-external-link-alt"></i>
+                  </button>
+                  <button class="see-project code" id="movietell-code">
+                    <span>Source</span><i class="fab fa-github"></i>
+                  </button>
+                </div>
+
+              </div>
+            </article>
+          </div>
+        </div>
+      </div>
+    </article>
+  </section>
+  <section class="about" id="about">
+    <div class="about-me">
+      <h1>About</h1>
+      <br />
+      <h1>Myself</h1>
+    </div>
+
+    <article class="header-text">
+      <p>
+        I have a diverse set of skills ranging from FullStack development to remote working and collaboration. When I am
+        not programming you can find me reading up on mysteries of the mind or taking roadtrips
+      </p>
+      <p class="connect">LET'S CONNECT</p>
+      <ul class="socials">
+        <li>
+          <a href="https://github.com/Mindo-Joseph"><i class="fab fa-github"></i></a>
+        </li>
+        <li>
+          <a href="https://www.linkedin.com/in/josephmindo/"><i class="fab fa-linkedin-in"></i></a>
+        </li>
+        <li>
+          <a href="https://medium.com/@ndirangumindo"><i class="fab fa-medium"></i></a>
+        </li>
+        <li>
+          <a href="https://twitter.com/mindoJoseph"><i class="fab fa-twitter"></i></a>
+        </li>
+      </ul>
+
+      <button id="get-resume" type="submit" onclick="window.open('resume.pdf')">
+        Get resume
+      </button>
+    </article>
+    <article class="tech-stack">
+      <div class="accordion">
+        <div class="accordion-item" id="language">
+          <a href="#language">
+            Languages
+            
+          </a>
+          <div class="stack-items">
+            <div class="single-item">
+              <i class="devicon-ruby-plain-wordmark colored"></i>
+              <i class="devicon-html5-plain-wordmark"></i>
+              <i class="devicon-css3-plain-wordmark colored"></i>
+              <i class="devicon-javascript-plain colored"></i>
+              <i class="devicon-python-plain-wordmark"></i>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion-item" id="framework">
+          <a href="#framework">
+            Frameworks
+            
+          </a>
+          <div class="stack-items">
+            <div class="single-item">
+              <i class="devicon-rails-plain-wordmark colored"></i>
+              <i class="devicon-sass-original colored"></i>
+              <i class="devicon-redux- colored"></i>
+              <i class="devicon-react-original-wordmark colored"></i>
+              <i class="devicon-bootstrap-plain-wordmark colored"></i>
+            </div>
+          </div>
+        </div>
+
+
+      </div>
+
+
+
+
+
+
+    </article>
+  </section>
+  <footer class="contact">
+    <div class="footer-text">
+      <h2>Contact Me</h2>
+      <p>Do you have an app idea that needs to implemented? Contact me here</p>
+    </div>
+
+
+    <form id="contact" action="#contact">
+      <fieldset>
+        <input type="hidden" name="contact_number">
+        <input placeholder="Your name" type="text" tabindex="1" required  />
+      </fieldset>
+      <fieldset>
+        <input placeholder="Your Email Address" type="email" name="user_email" tabindex="2" required />
+      </fieldset>
+      <fieldset>
+        <textarea placeholder="Type your message here...." tabindex="5" name="message" required></textarea>
+      </fieldset>
+      <fieldset>
+        <input name="submit" class="send-email" type="submit" id="contact-submit" data-submit="...Sending" value="Send">
+
+      </fieldset>
+    </form>
+  </footer>
+
+</body>
+
 <script src="index.js"></script>
+
+</html>
